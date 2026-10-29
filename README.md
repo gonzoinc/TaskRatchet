@@ -45,14 +45,17 @@ After installation, ask `$taskratchet settings` in the existing chat to configur
 
 This early version targets the **local Windows Codex desktop app** and requires Node.js on PATH. It needs no separate UI or API key.
 
-From the root of a local clone or extracted package, run:
+Clone the repository, then register its local marketplace from PowerShell:
 
 ```powershell
+git clone https://github.com/gonzoinc/TaskRatchet.git
+Set-Location ./TaskRatchet
 codex plugin marketplace add .
-codex plugin add taskratchet@taskratchet-local
 ```
 
-Review and trust the plugin’s hook definitions through the supported hook-review flow, then start a new desktop chat. Installation alone does not trust hooks. In that chat, begin with:
+If you already cloned or extracted TaskRatchet, open PowerShell in that folder and run only the marketplace command. This registers the catalog; install the plugin in the desktop app.
+
+Restart the desktop app. Open the **Plugins Directory**, select **TaskRatchet Local**, and install **TaskRatchet**. Review and trust its hook definitions through the supported hook-review flow, then start a new desktop chat with the plugin enabled. Installation alone does not trust hooks. In that chat, begin with:
 
 ```text
 $taskratchet settings
