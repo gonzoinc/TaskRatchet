@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "mode": "auto",
+  "automaticDirection": "lower-only",
+  "increasePolicy": "ask",
+  "decreasePolicy": "allow",
+  "restoreBaseline": "completion",
+  "restoreNeedsApproval": false,
+  "minEffort": "low",
+  "maxEffort": "max",
+  "allowedEfforts": ["low", "medium", "high", "xhigh", "max"],
+  "waitTimeoutSeconds": 900,
+  "assessmentRules": "Consider consequences, ambiguity, technical difficulty, verification needs and the full requested outcome together. Prefer low for simple reversible work; medium for routine bounded work; high for substantial uncertainty or costly hidden mistakes; xhigh or max only for unusually difficult work that warrants the cost. Length or back-and-forth alone does not determine effort."
+}

@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "SessionStart": [{ "hooks": [{ "type": "command", "command": "node \"${PLUGIN_ROOT}/scripts/hook.cjs\"", "timeout": 10, "additionalContextLimit": 1200 }] }],
+    "UserPromptSubmit": [{ "hooks": [{ "type": "command", "command": "node \"${PLUGIN_ROOT}/scripts/hook.cjs\"", "timeout": 10, "additionalContextLimit": 1200 }] }]
+  }
+}

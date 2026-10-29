@@ -1,0 +1,6 @@
+interface:
+  display_name: "TaskRatchet"
+  short_description: "Choose effort once per task and keep it steady"
+  default_prompt: "Use $taskratchet to manage task effort or configure its rules."
+policy:
+  allow_implicit_invocation: true

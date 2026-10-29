@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "taskratchet",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "Choose reasoning effort once per task, with persistent task locks and configurable approval rules.",
+  "extensions": { "com.openai": {
+    "hooks": "./hooks/hooks.json",
+    "interface": {
+      "displayName": "TaskRatchet",
+      "shortDescription": "Choose effort once per task and hold it steady",
+      "longDescription": "Automatic or suggested effort changes with task locks, approval rules, and restoration to the starting effort.",
+      "composerIcon": "./assets/TaskRatchet Gear and Progress Emblem.png",
+      "logo": "./assets/TaskRatchet Gear and Progress Emblem.png",
+      "category": "Productivity",
+      "capabilities": ["Read", "Write"],
+      "defaultPrompt": ["Show my TaskRatchet settings."]
+    }
+  } }
+}

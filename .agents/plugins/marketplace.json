@@ -1,0 +1,10 @@
+{
+  "name": "taskratchet-local",
+  "interface": { "displayName": "TaskRatchet Local" },
+  "plugins": [{
+    "name": "taskratchet",
+    "source": { "source": "local", "path": "./" },
+    "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+    "category": "Productivity"
+  }]
+}
