@@ -1,0 +1,26 @@
+{
+  "name": "taskratchet-companion-prototype",
+  "displayName": "TaskRatchet Companion (Experimental)",
+  "description": "Version-pinned experiment controlling effort in an explicitly selected existing Codex chat.",
+  "version": "0.0.1",
+  "publisher": "gonzoinc",
+  "license": "MIT",
+  "engines": { "vscode": "^1.96.0" },
+  "extensionKind": ["ui"],
+  "main": "./extension.cjs",
+  "categories": ["Other"],
+  "capabilities": { "untrustedWorkspaces": { "supported": false }, "virtualWorkspaces": false },
+  "scripts": { "test": "node --test tests/*.test.cjs", "bundle": "node scripts/build.cjs" },
+  "contributes": {
+    "commands": [
+      { "command": "taskratchet.probe", "title": "TaskRatchet: Probe disposable chat (read only)" },
+      { "command": "taskratchet.approve", "title": "TaskRatchet: Approve or keep pending suggestion" },
+      { "command": "taskratchet.apply", "title": "TaskRatchet: Apply next approved step" },
+      { "command": "taskratchet.verify", "title": "TaskRatchet: Verify saved effort" },
+      { "command": "taskratchet.complete", "title": "TaskRatchet: Complete task and restore baseline" },
+      { "command": "taskratchet.cancel", "title": "TaskRatchet: Cancel pending switch" },
+      { "command": "taskratchet.status", "title": "TaskRatchet: Show task lock status" },
+      { "command": "taskratchet.settings", "title": "TaskRatchet: Edit shared rules" }
+    ]
+  }
+}
